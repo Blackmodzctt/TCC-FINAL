@@ -1,14 +1,19 @@
+/*----Importação de Fontes-----*/
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
+/*-----Reset Geral----*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*Estilização Geral-----*/
 body {
     font-family: 'Montserrat', sans-serif;
     filter: brightness(0.95) contrast(1.1);
-    
-                                   /* Fundo que se mistura com a imagem */
+
+    /* Fundo que se mistura com a imagem */
     background: linear-gradient(135deg, #02050b 0%, #050b1e 50%, #02050b 100%);
     color: white;
     overflow-x: hidden;
@@ -20,19 +25,20 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    
-    position: fixed; 
+
+    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    
-    background-color: #081534; 
-    z-index: 100; 
+
+    background-color: #081534;
+    z-index: 100;
 }
 
 .logo-container {
-    width: 150px; 
+    width: 150px;
 }
+
 .logo-container img {
     width: 100%;
     display: block;
@@ -43,6 +49,7 @@ nav ul {
     list-style: none;
     gap: 30px;
 }
+
 nav a {
     text-decoration: none;
     color: #ffffff;
@@ -50,140 +57,164 @@ nav a {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 600;
-    text-shadow: none; 
+    text-shadow: none;
     transition: color 0.3s;
 }
+
 nav a:hover {
     color: #a855f7;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .app {
-  min-height: 100vh;
-  background-color: #0B1320;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
+    height: 100vh;
+    background-color: #0B1320;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-image: url('./img/upscalemedia-transformed.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -300px;
 }
 
-.bio-section {
-  position: relative;
-  max-width: 1200px;
-  width: 100%;
-  padding: 60px 80px;
+h1 {
+    font-size: 11em;
+    text-align: left;
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-style: normal;
+    margin-left: -30%;
+    margin-top: 30%;
+
 }
+
+.secao-bio {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    display: inline-flex;
+}
+
+#tina {
+    height: 600px;
+}
+
 
 .content-wrapper {
-  display: flex;
-  gap: 60px;
-  align-items: center;
+    display: flex;
+    gap: 60px;
+    align-items: center;
 }
 
 .image-column {
-  flex: 0 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.image-container {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  overflow: hidden;
-  background-color: #0B1320;
-}
-
-.portrait-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .text-column {
-  flex: 1;
-  display: flex;
-  align-items: center;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.divisao {
+    display: flex;
+    text-align: right;
 }
 
 .bio-text {
-  font-size: 18px;
-  line-height: 1.7;
-  color: #F0F0F0;
-  font-weight: 400;
-  letter-spacing: 0.3px;
-  margin: 0;
+    font-size: 1.5em;
+    line-height: 1.7;
+    color: #F0F0F0;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    margin-top: 3%;
+    text-align: center;
 }
 
 /* ===== RESPONSIVIDADE HEADER ===== */
+
 @media (max-width: 900px) {
+
     header {
         flex-direction: column;
-        gap: 15px;
+        gap: 10px;
         padding: 15px 0;
-        height: auto;
-        position: static; /* evita sobreposição */
+        position: static;
     }
 
     nav ul {
         flex-direction: column;
         gap: 10px;
+        padding: 12px 0;
+        background: #081534;
+        border-top: 1px solid #a855f7;
         width: 100%;
         text-align: center;
-        background: #081534;
-        padding: 10px 0;
-        border-top: 2px solid #a855f7;
-    }
-
-    nav a {
-        font-size: 1rem;
-        display: block;
-        padding: 6px 0;
     }
 
     .logo-container {
         width: 120px;
-        margin-top: 5px;
     }
 }
 
-/* ===== RESPONSIVIDADE BIO SECTION ===== */
+/* ===== RESPONSIVIDADE SECTION 1 ===== */
+
 @media (max-width: 768px) {
-    .bio-section {
-        padding: 40px 20px;
+
+    h1 {
+        font-size: 6em;
+        margin-left: 5%;
+        margin-top: 30%;
     }
 
-    .content-wrapper {
+    .app {
+        height: 90vh;
+        background-position: top;
+    }
+}
+
+/* ===== RESPONSIVIDADE SECTION 2 ===== */
+
+@media (max-width: 900px) {
+
+    .divisao {
         flex-direction: column;
-        gap: 30px;
+        text-align: center;
     }
 
-    .image-container {
-        width: 250px;
-        height: 250px;
+    #tina {
+        height: 400px;
     }
 
     .bio-text {
-        font-size: 16px;
-        text-align: center;
+        font-size: 1.2em;
+        padding: 0 15px;
     }
 }
 
 @media (max-width: 480px) {
-    .image-container {
-        width: 200px;
-        height: 200px;
+
+    h1 {
+        font-size: 4.5em;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #tina {
+        height: 300px;
     }
 
     .bio-text {
-        font-size: 14px;
+        font-size: 1em;
     }
 }
