@@ -1,0 +1,774 @@
+                                        /* --- RESET E ESTILOS GERAIS --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    filter: brightness(0.95) contrast(1.1);
+    
+                                   /* Fundo que se mistura com a imagem */
+    background: linear-gradient(135deg, #02050b 0%, #050b1e 50%, #02050b 100%);
+    color: white;
+    overflow-x: hidden;
+}
+
+                                      /* --- HEADER / MENU (AGORA FIXO E AZUL) --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    left: 0;
+    
+    background-color: #081534; 
+    z-index: 100; 
+}
+
+.logo-container {
+    width: 150px; 
+}
+.logo-container img {
+    width: 100%;
+    display: block;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-shadow: none; 
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #a855f7;
+}
+
+                                        /* --- 1. BANNER INICIAL (MAIS LONGO) --- */
+.banner-inicial {
+    width: 100%;
+    height: 140vh; 
+    padding-top: 80px; 
+    
+                                       /* Mantenha a imagem do banner principal aqui */
+    background-image: url('./img/sentadacomqualidade.jpg');
+    
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+                                          /* EFEITO DEGRADE NA TRANSIÇÃO PARA O AZUL */
+.banner-inicial::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom, 
+        rgba(0, 0, 0, 0) 70%,   
+        rgba(2, 5, 11, 0.8) 90%, 
+        #02050b 100%             
+    );
+    pointer-events: none;
+}
+
+                                                  /* --- 2. SEÇÃO SOBRE --- */
+.sobre-mim {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    padding: 50px;
+    gap: 50px;
+    background: transparent; 
+}
+
+                                 /*  NOVO: ESTILO PARA MISTURAR A IMAGEM COM O FUNDO  */
+.sobre-image-wrapper {
+    flex: 1;
+    max-width: 500px;
+    position: relative;
+                                  /* Remover a borda e a sombra nítida (se houver) */
+    border-radius: 0; 
+    
+                                 /* ANIMAÇÃO: Adiciona uma sombra suave que pulsa */
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.5); 
+    animation: foco-suave 5s ease-in-out infinite; 
+}
+
+                                        /* LOCAL DA TAG/HASHTAG SOBRE A FOTO */
+.tag-overlay {
+    position: absolute;
+    top: 50px; 
+    left: 20px; 
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: #bf9b30; 
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.sobre-image-wrapper img {
+    width: 100%;
+                                      /* REMOVIDO: Borda e Box-shadow nítidas */
+    border-radius: 0; 
+    box-shadow: none;
+    
+                         /* Usar um 'mask' ou box-shadow para misturar as bordas */
+                        /* Usamos 'mix-blend-mode' para o efeito de mistura e 'filter' para ajustar */
+    mix-blend-mode: screen; 
+    filter: brightness(1.2) contrast(1.1);
+
+                                          /* ANIMAÇÃO: flutuação como uma animação */
+    animation: flutuar 4s ease-in-out infinite;
+}
+
+.sobre-content {
+    flex: 1;
+    max-width: 600px;
+}
+.sobre-content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.sobre-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+    margin-bottom: 30px;
+}
+                                          /* Botão Saiba  */
+.btn-saiba-mais {
+    display: inline-flex;
+    align-items: center;
+    background-color: #6b6b6b;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 15px 30px;
+    position: relative;
+    clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+    transition: transform 0.2s;
+}
+.btn-saiba-mais::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 15px; 
+    background-color: #bf9b30; 
+    z-index: -1;
+}
+.btn-saiba-mais:hover {
+    transform: scale(1.05);
+}
+
+                            /* a sessão da tina crats sobre as fotos vão aqui */
+                            
+/* Seção da galeria */
+.gallery-section {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0a1628 0%, #0d1b2a 50%, #1b263b 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    position: relative;
+}
+
+/* Frase motivacional */
+.quote {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 80px;
+    letter-spacing: 2px;
+    max-width: 900px;
+    line-height: 1.4;
+}
+
+/* Container da galeria */
+.gallery-container {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo base para todas as fotos */
+.photo {
+    position: absolute;
+    width: 250px;
+    height: 500px;
+    border-radius: 45px;
+    padding: 6px;
+    background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 50%, #c084fc 100%);
+    box-shadow: 
+        0 0 30px rgba(168, 85, 247, 0.7),
+        0 0 60px rgba(139, 92, 246, 0.5),
+        0 20px 60px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.photo:hover {
+    transform: scale(1.05);
+    box-shadow: 
+        0 0 50px rgba(168, 85, 247, 0.9),
+        0 0 90px rgba(139, 92, 246, 0.7),
+        0 30px 80px rgba(0, 0, 0, 0.7);
+    z-index: 100 !important;
+}
+
+/* Imagens dentro dos cartões */
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 40px;
+}
+
+/* Posicionamento - ORGANIZADO E RETO */
+.photo-1 {
+    top: 75px;
+    left: 50px;
+    transform: rotate(-3deg);
+    z-index: 2;
+}
+
+.photo-2 {
+    top: 75px;
+    left: 280px;
+    transform: rotate(-1deg);
+    z-index: 3;
+}
+
+.photo-3-center {
+    top: 75px;
+    left: 41%;
+    transform: translatex(-1deg);
+    z-index: 3;
+}
+
+.photo-4 {
+    top: 75px;
+    right: 280px;
+    transform: rotate(1deg);
+    z-index: 3;
+}
+
+.photo-5 {
+    top: 75px;
+    right: 50px;
+    transform: rotate(3deg);
+    z-index: 2;
+}
+
+
+                                    /* --- 3. FRASE --- */
+.quote-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+.quote-section h2 {
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+                                     /* --- 4. GALERIA --- */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 50px 100px 50px;
+    flex-wrap: wrap;
+}
+.card {
+    width: 300px;
+    height: 350px;
+    border: 4px solid #8A2BE2; 
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+                            /**ouca agr as musicas da tina **/
+    /* --- ESTILOS PARA A SEÇÃO PRINCIPAIS FAIXAS --- */
+
+.faixas-section {
+    
+
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section-title {
+    color: #ffffff;
+    font-size: 2.5em;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+
+.tracks-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Espaçamento entre as duas caixas de faixas */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.track-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%; /* Cada card ocupa metade da largura disponível (com margem) */
+    max-width: 500px; /* Limita o tamanho máximo dos cards */
+}
+
+.video-preview {
+    width: 100%;
+                            /* Borda amarela-escura/ouro ao redor da pré-visualização do vídeo, como na imagem */
+    border: 5px solid #a88b50; 
+    box-shadow: 0 0 15px rgba(168, 139, 80, 0.7);
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.video-preview img {
+    width: 100%;
+    display: block;
+}
+
+.track-info {
+                                 /* Estilo para a barra cinza na parte inferior do vídeo */
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente escuro */
+    color: #ffffff;
+    font-size: 1.1em;
+    padding: 15px 10px;
+    width: 100%;
+    text-align: left;
+    position: relative; 
+    margin-top: -55px; /* Ajuste para o texto subir e cobrir a parte inferior da imagem */
+    z-index: 2;
+}
+
+/* --- ESTILO DO BOTÃO "OUÇA AGORA" --- */
+
+.btn-ouca-agora {
+    /* Fundo e texto em cores de ouro/mostarda, como na imagem */
+    background-color: #a88b50; /* Fundo dourado */
+    color:#000080; /* Texto escuro */
+    font-weight: 700;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 5px;
+    margin-top: 50px; /* Espaço entre a faixa e o botão */
+    
+    /* Efeito de sombra interna para dar profundidade ao botão */
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s;
+}
+
+.btn-ouca-agora:hover {
+    background-color: #c9ac75;
+}
+
+/*aqui vai a parte da kabuto */
+
+
+
+/* sessão kabuto -canecas personalizadas    */
+
+.kabbuto-section {
+    min-height: 100vh;
+    background: #0d1b2a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+}
+
+.kabbuto-container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.kabbuto-content {
+    width: 100%;
+}
+
+.kabbuto-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3.5rem, 8vw, 7rem);
+    font-weight: 900;
+    color: #f5f5f5;
+    text-align: center;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 40px rgba(148, 0, 211, 0.4);
+}
+
+.kabbuto-subtitle {
+    font-family: 'Dancing Script', cursive;
+    font-size: clamp(1.8rem, 4vw, 3.2rem);
+    font-weight: 400;
+    color: #d0d0d0;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.kabbuto-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 60px;
+    padding: 0 10px;
+}
+
+.kabbuto-card {
+    background: transparent;
+    border-radius: 24px;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #A058D5;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kabbuto-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 30px rgba(160, 88, 213, 0.6);
+}
+
+.kabbuto-card img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 22px;
+    display: block;
+}
+
+.kabbuto-card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    height: 380px;
+}
+
+.kabbuto-card-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.kabbuto-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 20px 70px;
+    background: #DA32FF;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 8px 30px rgba(218, 50, 255, 0.5);
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+}
+
+.kabbuto-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 12px 40px rgba(218, 50, 255, 0.7);
+    background: #E854FF;
+}
+
+.kabbuto-btn:active {
+    transform: translateY(-1px) scale(1.02);
+}
+
+/* a parte do footer da finalização  do site */
+    .contatos-section {
+    min-height: 100vh;
+    background: #0a1628;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+}
+
+.contatos-container {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+.contatos-title {
+    font-size: 4rem;
+    font-weight: 900;
+    color: #ffffff;
+    margin-bottom: 80px;
+    letter-spacing: 3px;
+}
+
+.contatos-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+
+.icon-link {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.icon-link:hover {
+    transform: scale(1.1);
+}
+
+.icon-link img {
+    width: 80px;
+    height: 80px;
+    
+}
+
+.contatos-divider {
+    border: none;
+    border-top: 2px solid #ffffff;
+    margin: 80px 0 50px 0;
+    width: 100%;
+}
+
+.contatos-footer {
+    text-align: center;
+}
+
+.copyright {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.copyright .italic {
+    font-style: italic;
+}
+
+.developer {
+    font-size: 1rem;
+    color: #d0d0d0;
+    font-weight: 300;
+}
+
+/* -------------------- RESPONSIVIDADE -------------------- */
+
+/* ======== 1024px – TABLETS ======== */
+@media (max-width: 1024px) {
+
+    header {
+        padding: 15px 30px;
+    }
+
+    .banner-inicial {
+        height: 90vh;
+        background-position: center;
+    }
+
+    .sobre-mim {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .sobre-image-wrapper {
+        max-width: 350px;
+    }
+
+    .gallery-container {
+        height: auto;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .photo {
+        position: relative;
+        width: 45%;
+        height: 350px;
+        transform: none !important;
+        left: auto !important;
+        right: auto !important;
+        top: auto !important;
+    }
+
+    .tracks-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .track-card {
+        width: 80%;
+    }
+
+    .kabbuto-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .contatos-icons img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+
+/* ======== 768px – CELULARES GRANDES ======== */
+@media (max-width: 768px) {
+
+    .banner-inicial {
+        height: 75vh;
+    }
+
+    .sobre-content h1 {
+        font-size: 2rem;
+    }
+
+    .gallery-container {
+        flex-direction: column;
+    }
+
+    .photo {
+        width: 80%;
+        height: 350px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .tracks-container {
+        width: 100%;
+        gap: 40px;
+    }
+
+    .track-card {
+        width: 90%;
+    }
+
+    .kabbuto-title {
+        font-size: 3rem;
+    }
+
+    .kabbuto-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contatos-title {
+        font-size: 3rem;
+    }
+
+    .contatos-icons {
+        gap: 30px;
+    }
+
+    .icon-link img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+        height: auto;
+        position: static; /* evita sobreposição */
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        background: #081534;
+        padding: 15px 0;
+        width: 100%;
+        text-align: center;
+        border-top: 2px solid #a855f7;
+    }
+
+    nav a {
+        font-size: 1rem;
+        display: block;
+        padding: 8px 0;
+    }
+
+    .logo-container {
+        width: 130px;
+        margin-top: 10px;
+    }
+}
+
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+.nav ul {
+position: absolute;
+top: 80px;
+}
+}
+
+
+
+  
