@@ -71,6 +71,7 @@ nav a:hover {
 
 /* ===== GRID DE FOTOS (2x2) ===== */
 .grid-fotos {
+    margin-top: 12%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 35px;
