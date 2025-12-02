@@ -12,7 +12,6 @@ body {
                                    /* Fundo que se mistura com a imagem */
     background: linear-gradient(135deg, #02050b 0%, #050b1e 50%, #02050b 100%);
     color: white;
-    overflow-x: hidden;
 }
 
                                       /* --- HEADER / MENU (AGORA FIXO E AZUL) --- */
@@ -611,6 +610,11 @@ nav a:hover {
     font-weight: 300;
 }
 
+.topo {
+    border-radius: 14px;
+    border: solid white 1px;
+    
+}
 /* -------------------- RESPONSIVIDADE -------------------- */
 
 /* ======== 1024px – TABLETS ======== */
