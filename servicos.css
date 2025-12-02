@@ -1,64 +1,105 @@
-/*Importação das fontes*/
-@import url(https://db.onlinewebfonts.com/c/1536e4c1d2209a656593ef813080bd30?family=Subway+NewYork+OT+W03+Regular);
+/*Reset Geral*/
 
-/*Reset Geral*/ 
-* {
+*{
+
     margin: 0%;
+    
     padding: 0%;
+    
     box-sizing: border-box;
-}
-
-/*Personalização dos cards*/
-.cardservico {
+    
+    
+    }
+    
+    /*Personalização dos cards*/
+    
+    .cardservico {
+    
     display: flex;
+    
     justify-self: center;
+    
     align-items: center;
+    
     background-color: #190344;
+    
     padding: 20px;
+    
     width: 40%;
+    
     border-radius: 12px;
+    
     margin-top: 2%;
+    
     margin-bottom: 3%;
-}
-
-/*Alinhamento de texto*/
-.textos {
+    
+    }
+    
+    /*Alinhamento de texto*/
+    
+    .textos {
+    
     text-align: center;
-}
-
-/*Ajuste dos tamanhos dos vídeos*/
-.videos {
+    
+    }
+    
+    /*Ajuste dos tamanhos dos vídeos*/
+    
+    .videos {
+    
     height: 400px;
+    
     border-radius: 12px;
+    
     margin-right: 1.7%;
-}
-
-/*Ajuste da imagem*/
-.imagemservico {
+    
+    }
+    
+    /*Ajuste da imagem*/
+    
+    .imagemservico {
+    
     height: 400px;
+    
     border-radius: 12px;
+    
     width: 330px;
+    
     margin-right: 1.7%;
-}
-
-/*Personalização do botão que leva para o instagram*/
-.botaoinsta {
+    
+    }
+    
+    /*Personalização do botão que leva para o instagram*/
+    
+    .botaoinsta {
+    
     background: linear-gradient(to right, #db7d11, #d61371);
+    
     border: none;
+    
     border-radius: 12px;
+    
     margin-top: 6%;
+    
     height: 9vh;
+    
     width: 100%;
+    
     color: white;
+    
     font-size: 1.3em;
-}
-
-.botaoinsta:hover {
+    
+    }
+    
+    .botaoinsta:hover {
+    
     background: linear-gradient(to right, #7a460b, #850c47);
+    
     cursor: pointer;
-}
-
-/* -------------------- RESPONSIVIDADE -------------------- */
+    
+    }
+    
+    /* -------------------- RESPONSIVIDADE -------------------- */
 
 /* ======== 1024px – TABLETS ======== */
 @media (max-width: 1024px) {
@@ -189,4 +230,3 @@
         left: 0;
     }
 }
-
