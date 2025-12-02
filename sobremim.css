@@ -104,6 +104,7 @@ h1 {
 
 #tina {
     height: 600px;
+    border-radius: 12px;
 }
 
 
@@ -132,75 +133,115 @@ h1 {
     letter-spacing: 0.3px;
     margin-top: 3%;
     text-align: center;
+    margin-bottom: 12%;
 }
 
-/* ===== RESPONSIVIDADE HEADER ===== */
+/* -------------------- RESPONSIVIDADE -------------------- */
 
+/* ======== 1024px – TABLETS ======== */
+@media (max-width: 1024px) {
+
+    h1 {
+        font-size: 7em;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 15%;
+    }
+
+    .app {
+        background-position: center;
+        height: 70vh;
+    }
+
+    .divisao {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 0 30px;
+    }
+
+    #tina {
+        height: 450px;
+        width: auto;
+    }
+
+    .bio-text {
+        font-size: 1.3em;
+        max-width: 90%;
+        margin-bottom: 8%;
+    }
+}
+
+
+/* ======== 900px – TABLETS MENORES / MOBILE HORIZONTAL ======== */
 @media (max-width: 900px) {
 
     header {
         flex-direction: column;
-        gap: 10px;
-        padding: 15px 0;
+        gap: 20px;
+        padding: 20px 0;
+        height: auto;
         position: static;
     }
 
     nav ul {
         flex-direction: column;
-        gap: 10px;
-        padding: 12px 0;
+        gap: 15px;
         background: #081534;
-        border-top: 1px solid #a855f7;
+        padding: 15px 0;
         width: 100%;
         text-align: center;
+        border-top: 2px solid #a855f7;
+    }
+
+    nav a {
+        font-size: 1rem;
+        display: block;
+        padding: 8px 0;
     }
 
     .logo-container {
-        width: 120px;
-    }
-}
-
-/* ===== RESPONSIVIDADE SECTION 1 ===== */
-
-@media (max-width: 768px) {
-
-    h1 {
-        font-size: 6em;
-        margin-left: 5%;
-        margin-top: 30%;
-    }
-
-    .app {
-        height: 90vh;
-        background-position: top;
-    }
-}
-
-/* ===== RESPONSIVIDADE SECTION 2 ===== */
-
-@media (max-width: 900px) {
-
-    .divisao {
-        flex-direction: column;
-        text-align: center;
+        width: 130px;
+        margin-top: 10px;
     }
 
     #tina {
-        height: 400px;
+        height: 380px;
+    }
+
+    h1 {
+        font-size: 6em;
+        margin-top: 20%;
     }
 
     .bio-text {
         font-size: 1.2em;
-        padding: 0 15px;
+        padding: 0 20px;
     }
 }
 
-@media (max-width: 480px) {
+
+/* ======== 768px – CELULARES GRANDES ======== */
+@media (max-width: 768px) {
+
+    .app {
+        height: 55vh;
+        padding: 10px;
+        background-position: center;
+    }
 
     h1 {
         font-size: 4.5em;
+        margin-top: 35%;
         margin-left: 0;
         text-align: center;
+    }
+
+    .divisao {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 15px;
+        gap: 25px;
     }
 
     #tina {
@@ -208,6 +249,18 @@ h1 {
     }
 
     .bio-text {
-        font-size: 1em;
+        font-size: 1.1em;
+        text-align: center;
+        margin-bottom: 15%;
+    }
+}
+
+
+/* ===== MOBILE — Ajuste do menu recolhido ===== */
+@media (max-width: 768px) {
+    nav ul {
+        position: absolute;
+        top: 80px;
+        left: 0;
     }
 }

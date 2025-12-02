@@ -22,7 +22,7 @@ header {
     align-items: center;
     padding: 20px 50px;
     
-    position: absolute; 
+    
     width: 100%;
     top: 0;
     left: 0;
@@ -611,6 +611,21 @@ nav a:hover {
     font-weight: 300;
 }
 
+.topo {
+    border: none;
+    border-radius: 12px;
+    background-color: #1f294b;
+    height: 5.2vh;
+    width: 30%;
+    font-size: 1.3em;
+    color: #A058D5;
+    margin-top: 3%;
+}
+
+.topo:hover {
+    background-color: #3953a9;
+    cursor: pointer;
+}
 /* -------------------- RESPONSIVIDADE -------------------- */
 
 /* ======== 1024px – TABLETS ======== */
