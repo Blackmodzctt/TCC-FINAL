@@ -50,13 +50,14 @@
     }
 
     /* --- RESPONSIVIDADE --- */
+/* --- MOBILE (até 768px) --- */
 @media (max-width: 768px) {
 
     .cardservico {
         width: 90%;
         flex-direction: column;
-        text-align: center;
         padding: 15px;
+        text-align: center;
     }
 
     .selfie {
@@ -70,6 +71,7 @@
         flex-direction: column;
         gap: 25px;
         align-items: center;
+        text-align: center;
     }
 
     .logos-escuras {
@@ -79,7 +81,6 @@
 
     .informa {
         font-size: 1.2em;
-        margin-top: 5px;
     }
 
     .coluna a {
@@ -87,7 +88,72 @@
         flex-direction: column;
         align-items: center;
         text-decoration: none;
+        gap: 5px;
         color: white;
+    }
+}
+
+/* --- CELULARES DEITADOS (landscape) --- */
+@media (max-height: 500px) and (orientation: landscape) {
+
+    .cardservico {
+        width: 95%;
+        padding: 10px;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .selfie {
+        height: 200px;
+        width: auto;
+        margin: 0;
+    }
+
+    .coluna {
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .logos-escuras {
+        width: 50px;
+        height: 50px;
+    }
+
+    .informa {
+        font-size: 1em;
+    }
+}
+
+/* --- TABLET (768px a 1024px) --- */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .cardservico {
+        width: 80%;
+        padding: 20px;
+        flex-direction: row;
+        text-align: left;
+        gap: 20px;
+    }
+
+    .selfie {
+        width: 45%;
+        height: auto;
+    }
+
+    .coluna {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .logos-escuras {
+        width: 70px;
+        height: 70px;
+    }
+
+    .informa {
+        font-size: 1.4em;
     }
 }
     
