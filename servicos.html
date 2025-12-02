@@ -1,76 +1,226 @@
 <!DOCTYPE html>
-<html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="servicos.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Serviços</title>
-</head>
+<html lang="pt-br"><head><meta charset="UTF-8">
 
-<body>
-    <header>
-        <div class="logo-container">
-            <img src="./img/TINA_CRATZ-png.png" alt="Logo Tag">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Início</a></li>
-                <li><a href="./sobremim.html">Sobre Mim</a></li>
-                <li><a href="./servicos.html">Serviços</a></li>
-                <li><a href="./kabbuto.html">Kabbuto</a></li>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            </ul>
-        </nav>
-    </header>
-</body>
-<main>
-    <section class="servicos-section">
+<link rel="stylesheet" href="servicos.css">
 
-    <div class="audiovisual">
-        <div class="foto"><img src="./img/grafite.jpg" alt=""></div>
+<link rel="stylesheet" href="style.css">
+
+<title>Serviços</title>
+
+</head><body><header>
+
+    <div class="logo-container">
+
+        <img src="./img/TINA_CRATZ-png.png" alt="Logo Tag">
+
     </div>
 
-</section>
-    </main>
-        <div class="grid-fotos">
-            <div class="foto"><img src="./img/grafite.jpg" alt=""></div>
-            <div class="foto"><img src="./img/alianca.jpg" alt=""></div>
-            <div class="foto"><img src="./img/padre.jpg" alt=""></div>
-            <div class="foto"><img src="./img/casinha.jpg" alt=""></div>
-        </div>
+    <nav>
 
-        <div class="instagram-area">
-            <a href="https://www.instagram.com/acratz/" target="_blank">
-                <img src="./img/instagram.jpg" class="insta-logo" alt="Instagram">
-                <span class="insta-text">Siga no Insta</span>
-            </a>
-        </div>
+        <ul>
 
-        <div>
+            <li><a href="./index.html">Início</a></li>
+
+            <li><a href="./sobremim.html">Sobre Mim</a></li>
+
+            <li><a href="./servicos.html">Serviços</a></li>
+
+            <li><a href="./contatos.html">Contato</a></li>
+
+
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+<main>
+
+    <!--Primeiro Card-->
+
+    <section>
+
+        <div class="cardservico">
+
+            <video src="./video/audiovisual.mp4" controls class="videos"></video>
+
+            <div class="textos">
+
+                <h2 id="subtitulo">AUDIOVISUAL</h2>
+
+                <p>Criação completa de videos, desde ideia até o produto final. Inclui direção, gravação, edição e
+
+                    desenvolvimento de roteiros pensados para comunicar com impacto e originalidade.</p>
+
+                <a href="https://www.instagram.com/acratz/" target="_blank"><button
+
+                        class="botaoinsta">Instagram</button></a>
+
+            </div>
 
         </div>
 
     </section>
 
-    <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
-        </div>
-    </div>
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>
-    <footer>
-        <div class="contatos-footer">
-            <p class="copyright">© 2025 <span class="italic">Tina Cratz.</span> Todos os direitos reservados.</p>
-            <p class="developer">Desenvolvido por Lá Semilla.</p>
-        </div>
-        </div>
-    </footer>
-</main>
 
-</html>
+
+    <!--Segundo Card-->
+
+    <section>
+
+        <div class="cardservico">
+
+            <img src="./img/grafite.jpg" alt="Foto de uma pessoa Grafitando em uma tela" class="imagemservico">
+
+            <div class="textos">
+
+                <h2 id="subtitulo">FOTOGRAFIA</h2>
+
+                <p>Fotografias de eventos, ensaios, produtos e campanhas, realizadas com olhar artístico e técnico
+
+                    que valorizam cada detalhe.</p>
+
+                <a href="https://www.instagram.com/acratz/" target="_blank"><button
+
+                        class="botaoinsta">Instagram</button></a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!--Terceiro Card-->
+
+    <section>
+
+        <div class="cardservico">
+
+            <video src="./video/cobertura.mp4" controls class="videos"></video>
+
+            <div class="textos">
+
+                <h2 id="subtitulo">COBERTURA EM EVENTOS</h2>
+
+                <p>Acompanhamento completo do seu evento, registrando os melhores momentos com espontaneidade e
+
+                    qualidade profissional, garantindo fotos e vídeos que realmente contam a história do dia.</p>
+
+                <a href="https://www.instagram.com/acratz/"><button class="botaoinsta">Instagram</button></a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!--Quarto Card-->
+
+    <section>
+
+        <div class="cardservico">
+
+            <video src="./video/parceria.mp4" controls class="videos"></video>
+
+            <div class="textos">
+
+                <h2 id="subtitulo">PARCERIAS E COLABORAÇÕES</h2>
+
+                <p>Criação de trabalhos conjuntos com marcas, empresas e projetos, produzindo conteúdos e ações que
+
+                    conectam valores e ampliam alcance.</p>
+
+                <a href="https://www.instagram.com/stories/highlights/18298876339268732/" target="_blank"><button
+
+                        class="botaoinsta">Instagram</button></a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!--Último Card-->
+
+    <section>
+
+        <div class="cardservico">
+
+            <video src="./video/kabbuto.mp4" controls class="videos"></video>
+
+            <div class="textos">
+
+                <h2 id="subtitulo">LOJA PRÓPRIA</h2>
+
+                <p>Criação de canecas e garrafas térmicas totalmente personalizadas.</p>
+
+                <a href="https://www.instagram.com/kabbutocanecas/" target="_blank"><button
+
+                        class="botaoinsta">Instagram</button></a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    </section>
+
+
+
+    </main>
+
+    <footer>
+
+        <div class="contatos-footer">
+
+            <p class="copyright">© 2025 <span class="italic">Tina Cratz.</span> Todos os direitos reservados.</p>
+
+            <p class="developer">Desenvolvido por Lá Semilla.</p>
+
+        </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- SUITE VLIBRAS -->
+
+<div vw class="enabled">
+
+  <div vw-access-button class="active"></div>
+
+  <div vw-plugin-wrapper>
+
+    <div class="vw-plugin-top-wrapper"></div>
+
+  </div>
+
+</div>
+
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
+
+
+<script>
+
+  new window.VLibras.Widget("https://vlibras.gov.br/app");
+
+</script>
+
+</body>
+</html> 

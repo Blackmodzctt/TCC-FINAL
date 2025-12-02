@@ -1,206 +1,344 @@
-/*----Importação de Fontes-----*/
-@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+/*----Importação de Fontes-----*/@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
 
 /*-----Reset Geral----*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+*{
+
+margin: 0;
+
+padding: 0;
+
+box-sizing: border-box;
+
+
 }
 
 /*Estilização Geral-----*/
-body {
-    font-family: 'Montserrat', sans-serif;
-    filter: brightness(0.95) contrast(1.1);
 
-    /* Fundo que se mistura com a imagem */
-    background: linear-gradient(135deg, #02050b 0%, #050b1e 50%, #02050b 100%);
-    color: white;
-    overflow-x: hidden;
+body {
+
+font-family: 'Montserrat', sans-serif;
+
+filter: brightness(0.95) contrast(1.1);
+
+
+
+/* Fundo que se mistura com a imagem */
+
+background: linear-gradient(135deg, #02050b 0%, #050b1e 50%, #02050b 100%);
+
+color: white;
+
+overflow-x: hidden;
+
 }
 
 /*====Seção do Menu de Navegação====*/
+
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
 
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
+display: flex;
 
-    background-color: #081534;
-    z-index: 100;
+justify-content: space-between;
+
+align-items: center;
+
+padding: 20px 50px;
+
+
+
+position: fixed;
+
+width: 100%;
+
+top: 0;
+
+left: 0;
+
+
+
+background-color: #081534;
+
+z-index: 100;
+
 }
 
 .logo-container {
-    width: 150px;
+
+width: 150px;
+
 }
 
 .logo-container img {
-    width: 100%;
-    display: block;
+
+width: 100%;
+
+display: block;
+
 }
 
 nav ul {
-    display: flex;
-    list-style: none;
-    gap: 30px;
+
+display: flex;
+
+list-style: none;
+
+gap: 30px;
+
 }
 
 nav a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 600;
-    text-shadow: none;
-    transition: color 0.3s;
+
+text-decoration: none;
+
+color: #ffffff;
+
+font-size: 0.9rem;
+
+text-transform: uppercase;
+
+letter-spacing: 1px;
+
+font-weight: 600;
+
+text-shadow: none;
+
+transition: color 0.3s;
+
 }
 
 nav a:hover {
-    color: #a855f7;
+
+color: #a855f7;
+
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+
+font-family: 'Open Sans', sans-serif;
+
+-webkit-font-smoothing: antialiased;
+
+-moz-osx-font-smoothing: grayscale;
+
 }
 
 .app {
-    height: 100vh;
-    background-color: #0B1320;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background-image: url('./img/upscalemedia-transformed.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0px -150px;
+
+height: 100vh;
+
+background-color: #0B1320;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+padding: 20px;
+
+background-image: url('./img/upscalemedia-transformed.jpeg');
+
+background-repeat: no-repeat;
+
+background-size: cover;
+
+background-position: 0px -150px;
+
 }
 
 h1 {
-    font-size: 11em;
-    text-align: left;
-    font-family: "Tangerine", cursive;
-    font-weight: 700;
-    font-style: normal;
-    margin-left: -16%;
-    margin-top: 30%;
+
+font-size: 11em;
+
+text-align: left;
+
+font-family: "Tangerine", cursive;
+
+font-weight: 700;
+
+font-style: normal;
+
+margin-left: -16%;
+
+margin-top: 30%;
 
 }
 
 .secao-bio {
-    text-align: center;
-    background-repeat: no-repeat;
-    background-size: 60%;
-    display: inline-flex;
+
+text-align: center;
+
+background-repeat: no-repeat;
+
+background-size: 60%;
+
+display: inline-flex;
+
 }
 
 #tina {
-    height: 600px;
+
+height: 600px;
+
+border-radius: 12px;
+
 }
 
-
 .content-wrapper {
-    display: flex;
-    gap: 60px;
-    align-items: center;
+
+display: flex;
+
+gap: 60px;
+
+align-items: center;
+
 }
 
 .text-column {
-    flex: 1;
-    display: flex;
-    align-items: center;
+
+flex: 1;
+
+display: flex;
+
+align-items: center;
+
 }
 
 .divisao {
-    display: flex;
-    text-align: right;
+
+display: flex;
+
+text-align: right;
+
 }
 
 .bio-text {
-    font-size: 1.5em;
-    line-height: 1.7;
-    color: #F0F0F0;
-    font-weight: 400;
-    letter-spacing: 0.3px;
-    margin-top: 3%;
-    text-align: center;
+
+font-size: 1.5em;
+
+line-height: 1.7;
+
+color: #F0F0F0;
+
+font-weight: 400;
+
+letter-spacing: 0.3px;
+
+margin-top: 3%;
+
+text-align: center;
+
+margin-bottom: 12%;
+
 }
 
-/* ===== RESPONSIVIDADE HEADER ===== */
+/* -------------------- RESPONSIVIDADE -------------------- */
 
+/* ======== 1024px – TABLETS ======== */
+@media (max-width: 1024px) {
+
+    h1 {
+        font-size: 7em;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 15%;
+    }
+
+    .app {
+        background-position: center;
+        height: 70vh;
+    }
+
+    .divisao {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 0 30px;
+    }
+
+    #tina {
+        height: 450px;
+        width: auto;
+    }
+
+    .bio-text {
+        font-size: 1.3em;
+        max-width: 90%;
+        margin-bottom: 8%;
+    }
+}
+
+
+/* ======== 900px – TABLETS MENORES / MOBILE HORIZONTAL ======== */
 @media (max-width: 900px) {
 
     header {
         flex-direction: column;
-        gap: 10px;
-        padding: 15px 0;
+        gap: 20px;
+        padding: 20px 0;
+        height: auto;
         position: static;
     }
 
     nav ul {
         flex-direction: column;
-        gap: 10px;
-        padding: 12px 0;
+        gap: 15px;
         background: #081534;
-        border-top: 1px solid #a855f7;
+        padding: 15px 0;
         width: 100%;
         text-align: center;
+        border-top: 2px solid #a855f7;
+    }
+
+    nav a {
+        font-size: 1rem;
+        display: block;
+        padding: 8px 0;
     }
 
     .logo-container {
-        width: 120px;
-    }
-}
-
-/* ===== RESPONSIVIDADE SECTION 1 ===== */
-
-@media (max-width: 768px) {
-
-    h1 {
-        font-size: 6em;
-        margin-left: 5%;
-        margin-top: 30%;
-    }
-
-    .app {
-        height: 90vh;
-        background-position: top;
-    }
-}
-
-/* ===== RESPONSIVIDADE SECTION 2 ===== */
-
-@media (max-width: 900px) {
-
-    .divisao {
-        flex-direction: column;
-        text-align: center;
+        width: 130px;
+        margin-top: 10px;
     }
 
     #tina {
-        height: 400px;
+        height: 380px;
+    }
+
+    h1 {
+        font-size: 6em;
+        margin-top: 20%;
     }
 
     .bio-text {
         font-size: 1.2em;
-        padding: 0 15px;
+        padding: 0 20px;
     }
 }
 
-@media (max-width: 480px) {
+
+/* ======== 768px – CELULARES GRANDES ======== */
+@media (max-width: 768px) {
+
+    .app {
+        height: 55vh;
+        padding: 10px;
+        background-position: center;
+    }
 
     h1 {
         font-size: 4.5em;
+        margin-top: 35%;
         margin-left: 0;
         text-align: center;
+    }
+
+    .divisao {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 15px;
+        gap: 25px;
     }
 
     #tina {
@@ -208,6 +346,18 @@ h1 {
     }
 
     .bio-text {
-        font-size: 1em;
+        font-size: 1.1em;
+        text-align: center;
+        margin-bottom: 15%;
+    }
+}
+
+
+/* ===== MOBILE — Ajuste do menu recolhido ===== */
+@media (max-width: 768px) {
+    nav ul {
+        position: absolute;
+        top: 80px;
+        left: 0;
     }
 }
