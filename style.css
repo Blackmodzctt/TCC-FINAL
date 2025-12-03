@@ -7,7 +7,6 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    filter: brightness(0.95) contrast(1.1);
     
                                    /* Fundo que se mistura com a imagem */
     background: linear-gradient(135deg, #02050b 0%, #050b1e 50%, #02050b 100%);
@@ -417,125 +416,6 @@ nav a:hover {
     background-color: #c9ac75;
 }
 
-/*aqui vai a parte da kabuto */
-
-
-
-/* sessão kabuto -canecas personalizadas    */
-
-.kabbuto-section {
-    min-height: 100vh;
-    background: #0d1b2a;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 80px 20px;
-}
-
-.kabbuto-container {
-    max-width: 1400px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.kabbuto-content {
-    width: 100%;
-}
-
-.kabbuto-title {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(3.5rem, 8vw, 7rem);
-    font-weight: 900;
-    color: #f5f5f5;
-    text-align: center;
-    margin-bottom: 15px;
-    letter-spacing: 2px;
-    text-shadow: 0 0 40px rgba(148, 0, 211, 0.4);
-}
-
-.kabbuto-subtitle {
-    font-family: 'Dancing Script', cursive;
-    font-size: clamp(1.8rem, 4vw, 3.2rem);
-    font-weight: 400;
-    color: #d0d0d0;
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.kabbuto-cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-    margin-bottom: 60px;
-    padding: 0 10px;
-}
-
-.kabbuto-card {
-    background: transparent;
-    border-radius: 24px;
-    padding: 0;
-    position: relative;
-    overflow: hidden;
-    border: 3px solid #A058D5;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.kabbuto-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 0 30px rgba(160, 88, 213, 0.6);
-}
-
-.kabbuto-card img {
-    width: 100%;
-    height: 380px;
-    object-fit: cover;
-    border-radius: 22px;
-    display: block;
-}
-
-.kabbuto-card-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 8px;
-    height: 380px;
-}
-
-.kabbuto-card-grid img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 12px;
-}
-
-.kabbuto-btn {
-    display: block;
-    margin: 0 auto;
-    padding: 20px 70px;
-    background: #DA32FF;
-    color: #ffffff;
-    font-family: 'Roboto', sans-serif;
-    font-size: clamp(1.5rem, 3vw, 2.2rem);
-    font-weight: 600;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    box-shadow: 0 8px 30px rgba(218, 50, 255, 0.5);
-    transition: all 0.3s ease;
-    text-transform: capitalize;
-    letter-spacing: 0.5px;
-}
-
-.kabbuto-btn:hover {
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 12px 40px rgba(218, 50, 255, 0.7);
-    background: #E854FF;
-}
-
-.kabbuto-btn:active {
-    transform: translateY(-1px) scale(1.02);
-}
-
 /* a parte do footer da finalização  do site */
     .contatos-section {
     min-height: 100vh;
@@ -612,9 +492,18 @@ nav a:hover {
 
 .topo {
     border-radius: 14px;
-    border: solid white 1px;
-    
+    border: none;
+    background-color: #3f567f;
+    color: white;
+    height: 4vh;
+    width: 20%;
 }
+
+.topo:hover {
+    cursor: pointer;
+    background-color: #1e2735;
+}
+
 /* -------------------- RESPONSIVIDADE -------------------- */
 
 /* ======== 1024px – TABLETS ======== */

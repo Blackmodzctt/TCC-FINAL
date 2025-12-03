@@ -49,6 +49,18 @@
     font-size: 1.5em;
     }
 
+    #botaoform {
+        background-color: rgb(78, 38, 116);
+        border: solid rgb(54, 5, 61) 3px;
+        border-radius: 12px;
+        height: 5vh;
+        width: 120%;
+    }
+
+    #botaoform:hover {
+        background-color: rgb(169, 100, 234);
+    }
+
     /* --- RESPONSIVIDADE --- */
 /* --- MOBILE (até 768px) --- */
 @media (max-width: 768px) {
